@@ -27,6 +27,10 @@ void setup() {
   mcp1.begin(MCP1_ADDR, &Wire);
   mcp2.begin(MCP2_ADDR, &Wire);
 
+  // Enable pullups on unused pins
+  for (int i = 10; i <= 15; i++)
+    mcp2.pullUp(i, HIGH);
+
   attachInterrupt(digitalPinToInterrupt(CLOCK), setClockTicked, RISING);
 }
 
