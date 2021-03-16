@@ -25,17 +25,6 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4350 3800 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_Expansion:MCP23017_SP U8
-U 1 1 60F32103
-P 6450 3800
-F 0 "U8" H 6000 4750 50  0000 C CNN
-F 1 "MCP23017_SP" H 6750 4750 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 6650 2800 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 6650 2700 50  0001 L CNN
-	1    6450 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Interface_Expansion:MCP23017_SP U9
 U 1 1 60F325BB
 P 8750 3800
@@ -198,7 +187,6 @@ Text Label 7200 3000 0    50   ~ 0
 R~W
 NoConn ~ 8050 3600
 NoConn ~ 8050 3700
-NoConn ~ 7150 3100
 NoConn ~ 7150 3200
 NoConn ~ 7150 3300
 NoConn ~ 7150 3400
@@ -365,8 +353,6 @@ Wire Bus Line
 	1200 5400 9800 5400
 Wire Bus Line
 	1200 5600 3550 5600
-Wire Bus Line
-	7500 3100 7500 5600
 $Comp
 L Device:R R3
 U 1 1 60F91D57
@@ -481,9 +467,28 @@ Wire Wire Line
 	7650 2250 7650 3900
 Wire Wire Line
 	7650 3900 8050 3900
+Connection ~ 5350 3200
+$Comp
+L Interface_Expansion:MCP23017_SP U8
+U 1 1 60F32103
+P 6450 3800
+F 0 "U8" H 6000 4750 50  0000 C CNN
+F 1 "MCP23017_SP" H 6750 4750 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 6650 2800 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 6650 2700 50  0001 L CNN
+	1    6450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3100 7400 3100
+Entry Wire Line
+	7400 3100 7500 3200
+Text Label 7200 3100 0    50   ~ 0
+SYNC
+Wire Bus Line
+	7500 3100 7500 5600
 Wire Bus Line
 	7450 4000 7450 5500
 Wire Bus Line
 	9800 3100 9800 5400
-Connection ~ 5350 3200
 $EndSCHEMATC
