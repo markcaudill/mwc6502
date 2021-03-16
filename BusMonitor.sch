@@ -198,7 +198,6 @@ Text Label 7200 3000 0    50   ~ 0
 R~W
 NoConn ~ 8050 3600
 NoConn ~ 8050 3700
-NoConn ~ 8050 3900
 NoConn ~ 7150 3100
 NoConn ~ 7150 3200
 NoConn ~ 7150 3300
@@ -208,7 +207,6 @@ NoConn ~ 7150 3600
 NoConn ~ 7150 3700
 NoConn ~ 5750 3600
 NoConn ~ 5750 3700
-NoConn ~ 5750 3900
 Wire Wire Line
 	5750 4400 5700 4400
 Wire Wire Line
@@ -302,7 +300,6 @@ F 3 "" H 6450 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6450 5000 6450 4950
-NoConn ~ 4850 3200
 NoConn ~ 4850 3300
 NoConn ~ 4450 2800
 NoConn ~ 4550 2800
@@ -467,11 +464,26 @@ Text Label 3800 3400 2    50   ~ 0
 CLK
 Wire Bus Line
 	3550 3500 3550 5600
+Connection ~ 3550 5600
+Wire Bus Line
+	3550 5600 7500 5600
+Wire Wire Line
+	4850 3200 5350 3200
+Wire Wire Line
+	5350 3200 5350 3900
+Wire Wire Line
+	5350 3900 5750 3900
+Wire Wire Line
+	5350 3200 5350 2250
+Wire Wire Line
+	5350 2250 7650 2250
+Wire Wire Line
+	7650 2250 7650 3900
+Wire Wire Line
+	7650 3900 8050 3900
 Wire Bus Line
 	7450 4000 7450 5500
 Wire Bus Line
 	9800 3100 9800 5400
-Connection ~ 3550 5600
-Wire Bus Line
-	3550 5600 7500 5600
+Connection ~ 5350 3200
 $EndSCHEMATC
