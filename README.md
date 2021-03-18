@@ -23,7 +23,7 @@ Configuration:
   - Arduino Nano + 2 I²C I/O expanders + 555 timer running at ~0.678Hz as a clock
   - Will likely be removed for the final product
 
-[![Schematic of main board](img/MWC 6502 v1.0.webp)](img/MWC 6502 v1.0.webp)
+[![Schematic of main board](img/MWC_6502_v1.0.webp)](img/MWC_6502_v1.0.webp)
 
 [![Schematic of diagnostics components](img/BusMonitor-Bus Monitor.webp)](img/BusMonitor-Bus Monitor.webp)
 
