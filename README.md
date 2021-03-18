@@ -25,7 +25,7 @@ Configuration:
 
 [![Schematic of main board](img/MWC_6502_v1.0.webp)](img/MWC_6502_v1.0.webp)
 
-[![Schematic of diagnostics components](img/BusMonitor-Bus Monitor.webp)](img/BusMonitor-Bus Monitor.webp)
+[![Schematic of diagnostics components](img/BusMonitor-Bus_Monitor.webp)](img/BusMonitor-Bus_Monitor.webp)
 
 Using an Arduino Nano with a couple of I²C I/O expanders (MCP23017) allows me to inspect the address and data bus as well as RW̅ and Sync signals. I have the Clock signal connected to an interrupt pin on the Nano which triggers an ISR to read the bus which is then displayed over the serial port. I had an OLED display working for a while, but it broke and I haven't had time to troubleshoot yet. The Sync signal is used to determine when an instruction is being read, and then I'm crudely mapping the opcode to a mnemonic.
 
