@@ -8,8 +8,6 @@ Build Log
 
 ### March 17, 2021
 
-![Processor cycling through memory addresses](img/IMG_0462.webm)
-
 [![Front view of breadboard](img/IMG_0462.webp)](img/IMG_0462.webp)
 
 [![Rear view of breadboard](img/IMG_0463.webp)](img/IMG_0463.webp)
